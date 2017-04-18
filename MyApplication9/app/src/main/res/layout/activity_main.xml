@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:stretchColumns="*">
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="성명">
+
+        </TextView>
+
+        <EditText
+            android:id="@+id/txtUserName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_span="4">
+        </EditText>
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RadioGroup
+            android:id="@+id/man_woman"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="성별">
+
+            </TextView>
+
+        </RadioGroup>
+
+        <RadioButton
+            android:id="@+id/man"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="남"></RadioButton>
+
+        <RadioButton
+            android:id="@+id/woman"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="여"></RadioButton>
+        <RadioGroup>
+
+        </RadioGroup>
+
+    </TableRow>
+
+    <TableRow>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="수신거부"/>
+
+        <CheckBox
+            android:id="@+id/SMS"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="SMS"
+            android:textStyle="bold"></CheckBox>
+
+        <CheckBox
+            android:id="@+id/eMail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="e-mail"
+            android:textStyle="bold"></CheckBox>
+
+    </TableRow>
+    <TableRow>
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_column="4"
+            android:layout_gravity="right"
+            android:text="등록" />
+    </TableRow>
+</TableLayout>
